@@ -2,6 +2,6 @@ package datamodel
 
 data class device(
     var deviceName :String,
-    var deviceId:Int,
+    var deviceId:String,
     var functionIds:ArrayList<Int>
 )

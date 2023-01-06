@@ -14,7 +14,7 @@ class deviceTest{
     fun testgeneration()
     {
         val deviceName = "Test";
-        val deviceId = 44;
+        val deviceId = "OH:44";
         val functionId = ArrayList<Int>();
         functionId.add(33);
         functionId.add(44);
