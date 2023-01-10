@@ -4,7 +4,7 @@ import datamodel.hilfsclass.Range
 
 data class function(
     var functionName: String,
-    var functionId: Int,
+    var functionId: Long,
     var onOff : Boolean? = null,
     var outputTrigger: Boolean? = null,
     var outputValue: String? =null,

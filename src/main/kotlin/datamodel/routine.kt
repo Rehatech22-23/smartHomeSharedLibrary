@@ -6,7 +6,7 @@ import datamodel.hilfsclass.TriggerTime
 
 data class routine(
     var routineName: String,
-    var routineId: Int,
+    var routineId: Long,
     var triggerType: Int,
     var triggerEventByDevice: ArrayList<TriggerEventByDevice>? = null,
     var routineEvent: ArrayList<RoutineEvent>? = null,
