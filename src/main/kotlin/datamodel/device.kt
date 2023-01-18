@@ -3,5 +3,5 @@ package datamodel
 data class device(
     var deviceName :String,
     var deviceId:String,
-    var functionIds:ArrayList<Int>
+    var functionIds:ArrayList<Long>
 )

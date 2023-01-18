@@ -1,7 +1,7 @@
 package datamodel.hilfsclass
 
 data class TriggerEventByDevice(
-    var deviceId: Int,
-    var functionId: Int,
-    var functionValue: Int
+    var deviceId: Long,
+    var functionId: Long,
+    var functionValue: Long
 )
