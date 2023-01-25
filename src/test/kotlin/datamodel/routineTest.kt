@@ -15,7 +15,7 @@ class routineTest {
     fun routineTest()
     {
         var routineName: String = "Test";
-        var routineId: Int = 42;
+        var routineId: Long = 42;
         var triggerType: Int = 2;
         val routine1 = routine(routineName, routineId, triggerType);
         val Json = gson.toJson(routine1);
@@ -28,12 +28,12 @@ class routineTest {
     fun routineTriggerTimeTest()
     {
         var routineName: String = "Test";
-        var routineId: Int = 42;
+        var routineId: Long = 42;
         var triggerType: Int = 2;
-        var triggerTime = TriggerTime(LocalDateTime.now(), true);
+        var triggerTime = TriggerTime(null, null,LocalDateTime.now(), true);
         var triggerT = ArrayList<TriggerTime>();
         triggerT.add(triggerTime);
-        triggerT.add(TriggerTime(LocalDateTime.of(2002,11,4,3,11), true))
+        triggerT.add(TriggerTime(null, null, LocalDateTime.of(2002,11,4,3,11), true))
         val routine1 = routine(routineName, routineId, triggerType,  triggerTime=triggerT );
         val Json = gson.toJson(routine1);
 
