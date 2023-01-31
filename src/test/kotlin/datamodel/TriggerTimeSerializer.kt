@@ -4,7 +4,7 @@ import com.google.gson.JsonElement
 import com.google.gson.JsonObject
 import com.google.gson.JsonSerializationContext
 import com.google.gson.JsonSerializer
-import datamodel.hilfsclass.TriggerTime
+import datamodel.util.TriggerTime
 import java.lang.reflect.Type
 import java.util.logging.Logger
 
