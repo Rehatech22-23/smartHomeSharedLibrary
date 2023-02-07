@@ -1,4 +1,4 @@
-package datamodel.util
+package de.rehatech2223.datamodel.util
 
 @kotlinx.serialization.Serializable
 data class Range(

@@ -1,6 +1,4 @@
-package datamodel.util
-
-import datamodel.Function
+package de.rehatech2223.datamodel.util
 
 @kotlinx.serialization.Serializable
 data class RoutineEvent(
@@ -8,5 +6,5 @@ data class RoutineEvent(
     val routineID: Long? = null,
     val deviceId: Long,
     val functionId: Long,
-    val funct: Function
+    val functionValue: Float,
 )

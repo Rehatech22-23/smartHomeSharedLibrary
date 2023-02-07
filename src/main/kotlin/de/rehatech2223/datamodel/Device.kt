@@ -1,4 +1,4 @@
-package datamodel
+package de.rehatech2223.datamodel
 
 @kotlinx.serialization.Serializable
 data class Device(

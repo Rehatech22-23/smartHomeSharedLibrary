@@ -1,4 +1,4 @@
-package datamodel.util
+package de.rehatech2223.datamodel.util
 
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.Serializable
@@ -12,7 +12,6 @@ import java.time.format.DateTimeFormatter
 
 object LocalDateTimeAsStringSerializer : KSerializer<LocalDateTime> {
     override val descriptor: SerialDescriptor = PrimitiveSerialDescriptor("DateTime", PrimitiveKind.STRING)
-
     override fun serialize(encoder: Encoder, value: LocalDateTime) {
         val string: String = value.toLocalTime().toString() //Do we need date? I thought we agreed upon only using time
         encoder.encodeString(string)
@@ -29,5 +28,5 @@ data class TriggerTime(
     val routineID: Long? = null,
     @Serializable(with = LocalDateTimeAsStringSerializer::class)
     val time: LocalDateTime,
-    val  repeat: Boolean
+    val repeat: Boolean
 )

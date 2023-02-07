@@ -1,6 +1,6 @@
-package datamodel
+package de.rehatech2223.datamodel
 
-import datamodel.util.Range
+import de.rehatech2223.datamodel.util.Range
 
 @kotlinx.serialization.Serializable
 data class Function(
