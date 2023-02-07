@@ -6,6 +6,6 @@ import de.rehatech2223.datamodel.Function
 data class TriggerEventByDevice(
     val triggerEventByDeviceID: Long? = null,
     val routineID: Long? = null,
-    val deviceId: Long,
+    val deviceId: String,
     val functionExpectation: Function
 )

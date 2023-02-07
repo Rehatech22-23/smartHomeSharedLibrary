@@ -4,7 +4,7 @@ package de.rehatech2223.datamodel.util
 data class RoutineEvent(
     val routineEventID: Long? = null,
     val routineID: Long? = null,
-    val deviceId: Long,
+    val deviceId: String,
     val functionId: Long,
     val functionValue: Float,
 )
