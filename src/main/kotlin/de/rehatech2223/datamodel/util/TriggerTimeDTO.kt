@@ -23,7 +23,7 @@ object LocalDateTimeAsStringSerializer : KSerializer<LocalDateTime> {
     }
 }
 @Serializable
-data class TriggerTime(
+data class TriggerTimeDTO(
     val triggerTimeID: Long? = null,
     val routineID: Long? = null,
     @Serializable(with = LocalDateTimeAsStringSerializer::class)
