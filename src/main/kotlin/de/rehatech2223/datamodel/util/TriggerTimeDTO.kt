@@ -28,5 +28,5 @@ data class TriggerTime(
     val routineID: Long? = null,
     @Serializable(with = LocalDateTimeAsStringSerializer::class)
     val time: LocalDateTime,
-    val repeat: Boolean
+    val repeat: Boolean,
 )

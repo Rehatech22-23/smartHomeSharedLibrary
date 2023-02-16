@@ -1,12 +1,12 @@
 package de.rehatech2223.datamodel
 
-import de.rehatech2223.datamodel.util.Range
+import de.rehatech2223.datamodel.util.RangeDTO
 
 @kotlinx.serialization.Serializable
-data class Function(
+data class FunctionDTO(
     val functionName: String,
     val functionId: Long,
-    val range: Range? = null,
+    val rangeDTO: RangeDTO? = null,
     val onOff : Boolean? = null,
     val outputValue: String? = null,
     val outputTrigger: Boolean? = null

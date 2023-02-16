@@ -1,7 +1,7 @@
 package de.rehatech2223.datamodel.util
 
 @kotlinx.serialization.Serializable
-data class RoutineEvent(
+data class RoutineEventDTO(
     val routineEventID: Long? = null,
     val routineID: Long? = null,
     val deviceId: String,
