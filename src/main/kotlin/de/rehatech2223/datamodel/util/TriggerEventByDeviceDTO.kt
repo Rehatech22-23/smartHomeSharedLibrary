@@ -4,8 +4,8 @@ import de.rehatech2223.datamodel.FunctionDTO
 
 @kotlinx.serialization.Serializable
 data class TriggerEventByDeviceDTO(
-    val triggerEventByDeviceId: Long? = null,
-    val routineId: Long? = null,
     val deviceId: String,
-    val functionDTOExpectation: FunctionDTO
+    val functionDTOExpectation: FunctionDTO,
+    val triggerEventByDeviceId: Long? = null,
+    val routineId: Long? = null
 )
