@@ -24,8 +24,8 @@ object LocalDateTimeAsStringSerializer : KSerializer<LocalDateTime> {
 }
 @Serializable
 data class TriggerTimeDTO(
-    val triggerTimeID: Long? = null,
-    val routineID: Long? = null,
+    val triggerTimeId: Long? = null,
+    val routineId: Long? = null,
     @Serializable(with = LocalDateTimeAsStringSerializer::class)
     val time: LocalDateTime,
     val repeat: Boolean,
