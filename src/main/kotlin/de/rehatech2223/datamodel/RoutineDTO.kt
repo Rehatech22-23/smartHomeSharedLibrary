@@ -12,7 +12,7 @@ import java.util.*
 @kotlinx.serialization.Serializable
 class RoutineDTO private constructor(
     val routineName: String,
-    val routineId: Long? = null,
+    val routineId: Long,
     val comparisonType: Int,
     val triggerTime: TriggerTimeDTO? = null,
     val triggerEventByDeviceDTO: TriggerEventByDeviceDTO? = null,
@@ -22,7 +22,7 @@ class RoutineDTO private constructor(
         val routineName: String,
         val comparisonType: Int,
         val routineEventDTO: ArrayList<RoutineEventDTO>,
-        var routineId: Long? = null,
+        var routineId: Long,
         var triggerTime: TriggerTimeDTO? = null,
         var triggerEventByDeviceDTO: TriggerEventByDeviceDTO? = null
     ){
