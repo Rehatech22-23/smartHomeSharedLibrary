@@ -9,7 +9,8 @@ class FunctionDTO private constructor(
     val rangeDTO: RangeDTO? = null,
     val onOff : Boolean? = null,
     val outputValue: String? = null,
-    val outputTrigger: Boolean? = null
+    val outputTrigger: Boolean? = null,
+    val isPlayer: Boolean = false
 ){
     data class Builder(
         val functionName: String,
@@ -17,12 +18,14 @@ class FunctionDTO private constructor(
         var rangeDTO: RangeDTO? = null,
         var onOff : Boolean? = null,
         var outputValue: String? = null,
-        var outputTrigger: Boolean? = null
+        var outputTrigger: Boolean? = null,
+        var isPlayer: Boolean = false
     ){
         fun rangeDTO(rangeDTO: RangeDTO) = apply { this.rangeDTO = rangeDTO }
         fun onOff(onOff: Boolean) = apply { this.onOff = onOff }
         fun outputValue(outputValue: String) = apply { this.outputValue = outputValue }
         fun outputTrigger(outputTrigger: Boolean) = apply { this.outputTrigger = outputTrigger }
-        fun build() = FunctionDTO(functionName, functionId, rangeDTO, onOff, outputValue, outputTrigger)
+        fun isPlayer(isPlayer: Boolean) = apply { this.isPlayer = isPlayer }
+        fun build() = FunctionDTO(functionName, functionId, rangeDTO, onOff, outputValue, outputTrigger, isPlayer)
     }
 }
