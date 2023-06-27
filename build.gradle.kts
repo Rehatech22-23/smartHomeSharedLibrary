@@ -1,23 +1,21 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.7.21"
+    kotlin("jvm") version "1.8.22"
     id("maven-publish")
     id("java")
-    kotlin("plugin.serialization") version "1.8.0"
+    kotlin("plugin.serialization") version "1.8.22"
 }
 
 group = "de.rehatech"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
-    testImplementation(kotlin("test"))
-    testImplementation("com.google.code.gson:gson:2.10")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
 }
 
 tasks.test {
@@ -32,7 +30,7 @@ publishing{
         create<MavenPublication>("maven"){
             groupId = "de.rehatech"
             artifactId ="homeekt"
-            version = "0.1.1"
+            version = "1.0.0"
             from(components["java"])
         }
     }
